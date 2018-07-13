@@ -1,0 +1,110 @@
+
+#one{
+	margin-top: 10px;
+		 background-color:#fff;	
+	padding:50px 10px 50px 0px;
+    
+
+}
+.row{
+	margin-top: 150px;
+	padding: 30px 10px 25px 0px; 
+	margin-bottom: 20px;
+	border-radius: 5px;
+	  
+}
+.block{
+	display: block;
+	
+}
+#y{
+	border-left: 1px solid #d4d4d4;
+}
+.navbar-light .navbar-brand{
+	color:#fff;
+}
+.navbar-light .navbar-nav .nav-link{
+   color:#fff;
+}
+navbar navbar-expand-lg navbar-light bg-light{
+  font-size: 1.5rem;
+
+}
+.bg-light{
+	background-color: #343a40!important;
+
+}
+#logo{
+     
+	width: 70px;
+    height:50px;
+	display: inline-block;
+
+	}
+	body{
+		background-color:#e8e7e4 ;
+       font-family: 'Raleway', sans-serif;
+       background-image:url("/stylesheets/booked.jpg");
+       background-repeat: no-repeat;
+       background-size:cover;
+	}
+	
+	#time{
+        font-weight: bold;     
+      
+	} 		
+     .btn{
+             background-color: #cb3904;
+     }
+     #p{
+     	color:#E93C16;
+     	font-size:17px;
+     }
+      .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}

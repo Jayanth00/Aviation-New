@@ -1,0 +1,109 @@
+ <% include partials/header %>
+<link rel="stylesheet" type="text/css" href="/stylesheets/booking.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet"> 
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top " >
+    <div class="container-fluid">
+  <a class="navbar-brand" href="#">AVIATION | </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Holidays</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Hotels</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<div class="container">
+    
+
+    <div class="row" id="one">
+    <div class="col-lg-2">
+         </div>
+         <div class="col-lg-2" id="y">
+      
+          </div>
+          <div class="col-lg-2" id="y">
+               <span>DEPARTURE</span>         
+          </div>
+        <div class="col-lg-2" id="y">
+           <span> ARRIVAL</span>
+        </div>
+        <div class="col-lg-2" id="y">
+         <span> DURATION</span>
+        </div>
+        <div class="col-lg-2" id="y">
+           <span> PRICE</span>
+        </div>
+      
+       </div> 
+        <% flights.forEach(function(flight){  %>
+      <div class="row">
+    <div class="col-lg-2">
+       <span><img src="/stylesheets/<%=flight.image%>" id="logo">
+           </span>
+           </div>
+          <div class="col-lg-2">
+       <span class="block">
+        <%=flight.name1%>
+      
+    </span>
+    <span  class="block"><%=flight.name2%></span>
+      </div>
+      <div class="col-lg-2">
+    <span class="block" id="time">
+     <%=flight.arrtime%>
+      
+    </span>
+    <span class="block"><%=flight.arrival%></span>
+  </div>
+  <div class="col-lg-2">
+    <span  class="block"  id="time">
+      <%=flight.deptime%>
+      
+    </span>
+    <span  class="block"><%=flight.departure%></span>
+  </div>
+  <div class="col-lg-2">
+    <span  class="block"  id="time">
+      <%=flight.duration%>
+      
+    </span>
+    <span  class="block"><%=flight.detail%></span>
+  </div>
+       <div class="col-lg-1" id="p">
+    <span  class="block"  id="time">
+      <%=flight.price%>
+            
+        </span>
+       
+    </div>
+         <div class="col-lg-1">
+           <a href="/final" role="button" class="btn btn-danger">Book</a>
+        </div>
+   </div>
+ <% }); %>
+ 
+  </div>
+ <% include partials/footer %>

@@ -1,0 +1,84 @@
+ <% include partials/header %>
+<link href="/stylesheets/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+	<div class="container-fluid">
+  <a class="navbar-brand" href="#">AVIATION | </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Holidays</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Hotels</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<div class="jumbotron">
+ <h6>Book Domestic and International flights
+ 	<span><button type="button" id="l1" class="btn btn-primary btn-sm">Domestic</button>
+<button type="button" id="l" class="btn btn-primary btn-sm">International</button>
+</span></h6>
+
+<form class="form-inline" action="/details" method="post">
+  <div class="form-group">
+    <label for="exampleInputName2">From</label>
+     <div class="icon-addon addon-lg">
+    <input type="list" class="form-control" name="departure" list="cityname" id="exampleInputName2" size="15" required>
+
+    <datalist id="cityname">
+  <option value="Boston">
+  <option value="Cambridge">
+</datalist>
+</div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">To</label>
+     <div class="icon-addon addon-lg">
+    <input type="list" class="form-control" name="arrival" list="cityname"  id="exampleInputEmail2" size="15" required>
+  
+   <datalist id="cityname">
+  <option value="Boston">
+  <option value="Cambridge">
+</datalist>
+ </div>
+  </div>
+   <div class="form-group">
+    <label for="xy">Depart</label>
+     <input type="date" class="form-control" min="2018-03-15"  max="2018-08-31"  id="exampleInputEmail2" size="15" required>
+     <label for="xy1">Passengers</label>
+     <input type="number" class="form-control" min="1" max="5" id="xy1" default="1" required>
+     <label for="xy3">Class</label>
+     <input type="list" class="form-control" list="ef" id="xy3" size="15"required>
+     <datalist id="ef">
+  <option value="Business">
+  <option value="Economy">
+</datalist>
+  <button class="btn btn-danger">Search</button>
+</form>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<% include partials/footer %>
