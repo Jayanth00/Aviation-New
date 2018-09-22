@@ -8,4 +8,4 @@
  <li>NODEJS</li>
  <li>MONGODB</li>
  </ul>
-<p>**You can have a look at the screenshots for clear understanding of website interface!!**<p>
+**You can have a look at the screenshots for clear understanding of website interface!!
